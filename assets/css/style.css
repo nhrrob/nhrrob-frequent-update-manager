@@ -1,0 +1,9 @@
+.plugins .plugin-update-tr .notice.notice-warning {
+    border: none;
+    background: unset;
+    margin: 1px;
+}
+
+.plugins .plugin-update-tr .notice.notice-warning p {
+    display: none;
+}
