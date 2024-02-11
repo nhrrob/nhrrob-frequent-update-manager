@@ -26,17 +26,17 @@ function nhrrob_frequent_update_manager_init(){
     $current_date = current_time('Y-m-d');
     $day_of_month = gmdate('j', strtotime($current_date));
 
-    $allowed_days = apply_filters('nhrrob_plugin_update_manager/allowed_days', 7);
+    $allowed_days = apply_filters('nhrrob_frequent_update_manager/allowed_days', 7);
 
     if ($day_of_month > intval( $allowed_days )) {
-        wp_register_style( 'nhrrob-plugin-update-manager-style', NHRROB_PLUGIN_UPDATE_MANAGER_ASSETS . '/css/style.css' );
-        wp_register_style( 'nhrrob-plugin-update-manager-global-style', NHRROB_PLUGIN_UPDATE_MANAGER_ASSETS . '/css/global.css' );
+        wp_register_style( 'nhrrob-frequent-update-manager-style', NHRROB_FREQUENT_UPDATE_MANAGER_ASSETS . '/css/style.css' );
+        wp_register_style( 'nhrrob-frequent-update-manager-global-style', NHRROB_FREQUENT_UPDATE_MANAGER_ASSETS . '/css/global.css' );
         
-        wp_enqueue_style('nhrrob-plugin-update-manager-global-style');
+        wp_enqueue_style('nhrrob-frequent-update-manager-global-style');
         if ($pagenow === 'plugins.php') { 
-            wp_enqueue_style('nhrrob-plugin-update-manager-style');
+            wp_enqueue_style('nhrrob-frequent-update-manager-style');
         }
     }
 }
 
-add_action('admin_enqueue_scripts', 'nhrrob_plugin_update_manager_init');
+add_action('admin_enqueue_scripts', 'nhrrob_frequent_update_manager_init');
