@@ -1,6 +1,6 @@
-=== NHR Plugin Update Manager | Hide Frequent Updates ===
+=== NHR Frequent Update Manager | Hide Frequent Update Notices ===
 Contributors: nhrrob
-Tags: hide frequent update notice, hide frequent updates, plugin update manager, remove unnecessary update wp plugin
+Tags: hide frequent update notice, hide frequent updates, frequent update manager, remove unnecessary update wp plugin
 Requires at least: 6.0
 Tested up to: 6.4
 Requires PHP: 7.4
@@ -9,7 +9,7 @@ License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 
-NHR Plugin Update Manager | Hide Frequent Updates
+NHR Frequent Update Manager | Hide Frequent Update Notices
 
 == Description ==
 

@@ -1,30 +1,30 @@
 <?php
 /**
- * Plugin Name: NHR Plugin Update Manager
+ * Plugin Name: NHR Frequent Update Manager
  * Plugin URI: https://nazmulrobin.com
  * Description: Getting too many updates from plugins? Well, say no to unnecessary frequent updates. Get updates whenever you want (e.x. once monthly) and Enjoy!
  * Author: Nazmul Hasan Robin
  * Version: 1.0.0
  * Requires at least: 6.0
  * Requires PHP: 7.4
- * Text Domain: nhrrob-plugin-update-manager
+ * Text Domain: nhrrob-frequent-update-manager
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-define('NHRROB_PLUGIN_UPDATE_MANAGER_VERSION', '1.0.0');
-define('NHRROB_PLUGIN_UPDATE_MANAGER_PLUGIN_DIR', plugin_dir_path( __FILE__ ));
-define('NHRROB_PLUGIN_UPDATE_MANAGER_FILE', __FILE__);
-define('NHRROB_PLUGIN_UPDATE_MANAGER_URL', plugins_url('', NHRROB_PLUGIN_UPDATE_MANAGER_FILE));
-define('NHRROB_PLUGIN_UPDATE_MANAGER_ASSETS', NHRROB_PLUGIN_UPDATE_MANAGER_URL . '/assets');
+define('NHRROB_FREQUENT_UPDATE_MANAGER_VERSION', '1.0.0');
+define('NHRROB_FREQUENT_UPDATE_MANAGER_PLUGIN_DIR', plugin_dir_path( __FILE__ ));
+define('NHRROB_FREQUENT_UPDATE_MANAGER_FILE', __FILE__);
+define('NHRROB_FREQUENT_UPDATE_MANAGER_URL', plugins_url('', NHRROB_FREQUENT_UPDATE_MANAGER_FILE));
+define('NHRROB_FREQUENT_UPDATE_MANAGER_ASSETS', NHRROB_FREQUENT_UPDATE_MANAGER_URL . '/assets');
 
-function nhrrob_plugin_update_manager_init(){
+function nhrrob_frequent_update_manager_init(){
     global $pagenow;
 
     $current_date = current_time('Y-m-d');
-    $day_of_month = date('j', strtotime($current_date));
+    $day_of_month = gmdate('j', strtotime($current_date));
 
     $allowed_days = apply_filters('nhrrob_plugin_update_manager/allowed_days', 7);
 
