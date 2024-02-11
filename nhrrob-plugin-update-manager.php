@@ -1,18 +1,18 @@
 <?php
-/*
-Plugin Name: NHR Plugin Update Manager
-Plugin URI: http://wordpress.org/plugins/nhrrob-plugin-update-manager/
-Description: Getting too many updates from plugins? Well, say no to unnecessary frequent updates. Get updates whenever you want (e.x. once monthly) and Enjoy!
-Author: Nazmul Hasan Robin
-Version: 1.0.0
-Author URI: https://nazmulrobin.com
-*/
+/**
+ * Plugin Name: NHR Plugin Update Manager
+ * Plugin URI: https://nazmulrobin.com
+ * Description: Getting too many updates from plugins? Well, say no to unnecessary frequent updates. Get updates whenever you want (e.x. once monthly) and Enjoy!
+ * Author: Nazmul Hasan Robin
+ * Version: 1.0.0
+ * Requires at least: 6.0
+ * Requires PHP: 7.4
+ * Text Domain: nhrrob-plugin-update-manager
+ * License: GPLv2 or later
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ */
 
-// Make sure we don't expose any info if called directly
-if ( ! function_exists('add_action') ) {
-	echo 'Access Denied!';
-	exit;
-}
+if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 define('NHRROB_PLUGIN_UPDATE_MANAGER_VERSION', '1.0.0');
 define('NHRROB_PLUGIN_UPDATE_MANAGER_PLUGIN_DIR', plugin_dir_path( __FILE__ ));
@@ -20,7 +20,7 @@ define('NHRROB_PLUGIN_UPDATE_MANAGER_FILE', __FILE__);
 define('NHRROB_PLUGIN_UPDATE_MANAGER_URL', plugins_url('', NHRROB_PLUGIN_UPDATE_MANAGER_FILE));
 define('NHRROB_PLUGIN_UPDATE_MANAGER_ASSETS', NHRROB_PLUGIN_UPDATE_MANAGER_URL . '/assets');
 
-function nhrrob_plugin_update_manager(){
+function nhrrob_plugin_update_manager_init(){
     global $pagenow;
 
     $current_date = current_time('Y-m-d');
@@ -39,4 +39,4 @@ function nhrrob_plugin_update_manager(){
     }
 }
 
-add_action('admin_enqueue_scripts', 'nhrrob_plugin_update_manager');
+add_action('admin_enqueue_scripts', 'nhrrob_plugin_update_manager_init');

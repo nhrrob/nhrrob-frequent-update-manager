@@ -1,11 +1,10 @@
 === NHR Plugin Update Manager | Hide Frequent Updates ===
 Contributors: nhrrob
-Donate link: https://nazmulrobin.com/
 Tags: hide frequent update notice, hide frequent updates, plugin update manager, remove unnecessary update wp plugin
-Requires at least: 5.8
+Requires at least: 6.0
 Tested up to: 6.4
-Stable tag: 1.0.0
 Requires PHP: 7.4
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
