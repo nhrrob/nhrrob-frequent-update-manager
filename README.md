@@ -1,1 +1,1 @@
-# nhrrob-plugin-update-manager
+# nhrrob-frequent-update-manager
