@@ -17,6 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 define('NHRROB_FREQUENT_UPDATE_MANAGER_VERSION', '1.0.0');
 define('NHRROB_FREQUENT_UPDATE_MANAGER_PLUGIN_DIR', plugin_dir_path( __FILE__ ));
 define('NHRROB_FREQUENT_UPDATE_MANAGER_FILE', __FILE__);
+define('NHRROB_FREQUENT_UPDATE_MANAGER_PATH', __DIR__);
 define('NHRROB_FREQUENT_UPDATE_MANAGER_URL', plugins_url('', NHRROB_FREQUENT_UPDATE_MANAGER_FILE));
 define('NHRROB_FREQUENT_UPDATE_MANAGER_ASSETS', NHRROB_FREQUENT_UPDATE_MANAGER_URL . '/assets');
 
@@ -29,8 +30,8 @@ function nhrrob_frequent_update_manager_init(){
     $allowed_days = apply_filters('nhrrob_frequent_update_manager/allowed_days', 7);
 
     if ($day_of_month > intval( $allowed_days )) {
-        wp_register_style( 'nhrrob-frequent-update-manager-style', NHRROB_FREQUENT_UPDATE_MANAGER_ASSETS . '/css/style.css' );
-        wp_register_style( 'nhrrob-frequent-update-manager-global-style', NHRROB_FREQUENT_UPDATE_MANAGER_ASSETS . '/css/global.css' );
+        wp_register_style( 'nhrrob-frequent-update-manager-style', NHRROB_FREQUENT_UPDATE_MANAGER_ASSETS . '/css/style.css', array(), filemtime( NHRROB_FREQUENT_UPDATE_MANAGER_PATH . '/assets/css/style.css' ) );
+        wp_register_style( 'nhrrob-frequent-update-manager-global-style', NHRROB_FREQUENT_UPDATE_MANAGER_ASSETS . '/css/global.css', array(), filemtime( NHRROB_FREQUENT_UPDATE_MANAGER_PATH . '/assets/css/global.css' ) );
         
         wp_enqueue_style('nhrrob-frequent-update-manager-global-style');
         if ($pagenow === 'plugins.php') { 
