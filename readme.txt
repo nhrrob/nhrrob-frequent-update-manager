@@ -4,7 +4,7 @@ Tags: hide frequent update notice, hide frequent updates, frequent update manage
 Requires at least: 6.0
 Tested up to: 6.4
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -72,7 +72,10 @@ The plugin operates seamlessly in the background, minimizing the risk of conflic
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.0.1 - 24/02/2024 =
+- Fixed: PCP issues.
+
+= 1.0.0 - 23/02/2024 =
 - Initial beta release. Cheers!
 
 
