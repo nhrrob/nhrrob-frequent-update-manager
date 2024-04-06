@@ -1,6 +1,6 @@
 === NHR Frequent Update Manager | Hide Frequent Update Notices ===
 Contributors: nhrrob
-Tags: hide frequent update notice, hide frequent updates, frequent update manager, remove unnecessary update wp plugin
+Tags: disable, updates, plugin update, disable update notices, easy update manager
 Requires at least: 6.0
 Tested up to: 6.5
 Requires PHP: 7.4
@@ -53,7 +53,7 @@ then it wont display plugin update notices on the other weeks.
 No. It works as standalone plugin.
 
 = How does NHR Frequent Update Manager work? =
-NHR Frequent Update Manager intelligently manages update notifications in the WordPress dashboard by automatically hiding them after a specified period (default 7 - means first 7 days of each month updates will be available). This helps users maintain a clutter-free dashboard experience.
+NHR Frequent Update Manager intelligently manages update notifications in the WordPress dashboard by automatically hiding them after a specified period (default 7 - means first 7 days of each month update notices will be visible). This helps users maintain a clutter-free dashboard experience.
 
 = Can I customize the duration for hiding update notifications? 
 Yes, NHR Frequent Update Manager offers flexible configuration options. 
