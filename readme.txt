@@ -53,12 +53,12 @@ then it wont display plugin update notices on the other weeks.
 No. It works as standalone plugin.
 
 = How does NHR Frequent Update Manager work? =
-NHR Frequent Update Manager intelligently manages update notifications in the WordPress dashboard by automatically hiding them after a specified period. This helps users maintain a clutter-free dashboard experience.
+NHR Frequent Update Manager intelligently manages update notifications in the WordPress dashboard by automatically hiding them after a specified period (default 7 - means first 7 days of each month updates will be available). This helps users maintain a clutter-free dashboard experience.
 
 = Can I customize the duration for hiding update notifications? 
 Yes, NHR Frequent Update Manager offers flexible configuration options. 
 Users can easily adjust the timeframe for hiding update notices according to their preferences using a simple filter provided by the plugin.
-Filter: `nhrrob_frequent_update_manager/allowed_days`
+Filter: `nhrrob_frequent_update_manager/allowed_days` (Default value: 7)
 
 = Is NHR Frequent Update Manager compatible with all WordPress themes and plugins? =
 Yes, NHR Frequent Update Manager is built to be compatible with most WordPress themes and plugins. 
