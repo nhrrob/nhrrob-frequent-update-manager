@@ -2,9 +2,9 @@
 Contributors: nhrrob
 Tags: disable, updates, plugin update, disable update notices, easy update manager
 Requires at least: 6.0
-Tested up to: 6.5
+Tested up to: 6.6
 Requires PHP: 7.4
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,6 +71,11 @@ The plugin operates seamlessly in the background, minimizing the risk of conflic
 
 
 == Changelog ==
+
+= 1.0.4 - 26/07/2024 =
+- WordPress tested up to version is updated to 6.6
+- Author URI added with the org profile link
+- We are just keeping things clean and simple for the time being. No feature added in this release.
 
 = 1.0.3 - 06/04/2024 =
 - Initial stable release. Cheers!
