@@ -5,7 +5,7 @@
  * Description: Getting too many updates from plugins? Well, say no to unnecessary frequent updates. Get updates whenever you want (e.x. once monthly) and Enjoy!
  * Author: Nazmul Hasan Robin
  * Author URI: https://profiles.wordpress.org/nhrrob/
- * Version: 1.0.4
+ * Version: 1.0.5
  * Requires at least: 6.0
  * Requires PHP: 7.4
  * Text Domain: nhrrob-frequent-update-manager
@@ -15,7 +15,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
-define('NHRROB_FREQUENT_UPDATE_MANAGER_VERSION', '1.0.4');
+define('NHRROB_FREQUENT_UPDATE_MANAGER_VERSION', '1.0.5');
 define('NHRROB_FREQUENT_UPDATE_MANAGER_PLUGIN_DIR', plugin_dir_path( __FILE__ ));
 define('NHRROB_FREQUENT_UPDATE_MANAGER_FILE', __FILE__);
 define('NHRROB_FREQUENT_UPDATE_MANAGER_PATH', __DIR__);
